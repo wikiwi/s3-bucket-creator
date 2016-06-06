@@ -13,7 +13,7 @@ s3-bucket-creator creates a bucket in a S3-compatible backend if it doesn't exis
 
 ## Example
 
-    docker run -e BUCKET=my-bucket \
+    docker run -e BUCKET_NAME=my-bucket \
                -e S3_ENDPOINT=https://s3.amazonaws.com \
                -e S3_ACCESS_KEY=ESGAWFEXAMPLE \
                -e S3_SECRET_KEY=efisj3ADawd+wawKEYEXAMPLE \
