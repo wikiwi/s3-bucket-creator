@@ -10,7 +10,7 @@ s3-bucket-creator creates a bucket in a S3-compatible backend if it doesn't exis
 | S3_VERSION     | S3v4                     | S3 protocol version can be either S3v2 or S3v4             |
 | BUCKET_NAME    | -                        | The name of the bucket to create                           |
 | INITIAL_DELAY  | 0                        | Initial delay in seconds before connecting to the endpoint |
-| INFINITE_SLEEP | false                    | Tell script to block infinetly until terminated            |
+| INFINITE_SLEEP | false                    | Tell script to block infinitely until terminated           |
 
 ## Example
 
