@@ -38,6 +38,6 @@ else
 fi
 
 if [[ "$INFINITE_SLEEP" == "true" ]]; then
-  cat
+  tail -f /dev/null
 fi
 
