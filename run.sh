@@ -2,6 +2,7 @@
 
 INITIAL_DELAY=${INITIAL_DELAY:-0}
 S3_VERSION=${S3_VERSION:-S3v4}
+INFINITE_SLEEP=${INFINITE_SLEEP:-false}
 
 if [ -z "$BUCKET_NAME" ]; then
   echo \$BUCKET_NAME was not defined
@@ -36,4 +37,7 @@ else
   echo Bucket \"$BUCKET_NAME\" already exists
 fi
 
-exit 0
+if [[ "$INFINITE_SLEEP" == "true" ]]; then
+  cat
+fi
+
