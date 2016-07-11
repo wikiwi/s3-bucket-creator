@@ -1,5 +1,9 @@
 #/bin/bash
 
+version=0.1.0
+
+echo s3-bucket-creator $version
+
 INITIAL_DELAY=${INITIAL_DELAY:-0}
 S3_VERSION=${S3_VERSION:-S3v4}
 INFINITE_SLEEP=${INFINITE_SLEEP:-false}
