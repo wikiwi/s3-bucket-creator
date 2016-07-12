@@ -4,3 +4,6 @@ engines:
   shellcheck:
     enabled: true
 
+ratings:
+  paths:
+    - "**.sh"
