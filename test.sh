@@ -14,7 +14,7 @@ cleanup() {
 
   cid=${cid:-''}
   if [ -n "$cid" ]; then
-    echo Stopping long runnign container...
+    echo Stopping long running container...
     docker stop $cid
     docker rm $cid
   fi
