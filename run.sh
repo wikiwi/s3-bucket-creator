@@ -2,7 +2,7 @@
 
 version=0.1.0
 
-echo s3-bucket-creator $version
+echo s3-bucket-creator "$version"
 
 INITIAL_DELAY=${INITIAL_DELAY:-0}
 S3_VERSION=${S3_VERSION:-S3v4}
@@ -28,17 +28,17 @@ if [ -z "$S3_SECRET_KEY" ]; then
   exit 1
 fi
 
-sleep $INITIAL_DELAY
+sleep "$INITIAL_DELAY"
 
 mc config host add s3host "$S3_ENDPOINT" "$S3_ACCESS_KEY" "$S3_SECRET_KEY" "$S3_VERSION"
 
-if ! mc ls s3host/$S3_BUCKET_NAME; then
-  echo Attempting to create bucket \"$S3_BUCKET_NAME\"...
-  if ! mc mb s3host/$S3_BUCKET_NAME; then
+if ! mc ls "s3host/$S3_BUCKET_NAME"; then
+  echo "Attempting to create bucket \"$S3_BUCKET_NAME\"..."
+  if ! mc mb "s3host/$S3_BUCKET_NAME"; then
     exit 1
   fi
 else
-  echo Bucket \"$S3_BUCKET_NAME\" already exists
+  echo "Bucket \"$S3_BUCKET_NAME\" already exists"
 fi
 
 if [[ "$INFINITE_SLEEP" == "true" ]]; then
