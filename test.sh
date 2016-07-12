@@ -6,17 +6,17 @@ NETWORK=${NETWORK:-wikiwi_isolated_nw}
 
 cleanup() {
   minioCID=${minioCID:-''}
-  if [ -n "$minioCID" ]; then
+  if [ -n "${minioCID}" ]; then
     echo Stopping Minio Server...
-    docker stop $minioCID
-    docker rm $minioCID
+    docker stop ${minioCID}
+    docker rm ${minioCID}
   fi
 
   cid=${cid:-''}
-  if [ -n "$cid" ]; then
+  if [ -n "${cid}" ]; then
     echo Stopping long running container...
-    docker stop $cid
-    docker rm $cid
+    docker stop ${cid}
+    docker rm ${cid}
   fi
 
   docker network rm ${NETWORK} || true
