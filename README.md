@@ -1,7 +1,7 @@
 # s3-bucket-creator
 s3-bucket-creator creates a bucket in a S3-compatible backend if it doesn't exist using [mc](https://github.com/minio/mc). This is designed to be used as a sidekick container.
 
-[![Build Status](https://travis-ci.org/wikiwi/s3-bucket-creator.svg?branch=travis)](https://travis-ci.org/wikiwi/s3-bucket-creator) [![Code Climate](https://codeclimate.com/github/wikiwi/s3-bucket-creator/badges/gpa.svg)](https://codeclimate.com/github/wikiwi/s3-bucket-creator)
+[![Build Status](https://travis-ci.org/wikiwi/s3-bucket-creator.svg?branch=travis)](https://travis-ci.org/wikiwi/s3-bucket-creator) [![Code Climate](https://codeclimate.com/github/wikiwi/s3-bucket-creator/badges/gpa.svg)](https://codeclimate.com/github/wikiwi/s3-bucket-creator) [![Docker Hub](https://img.shields.io/docker/pulls/wikiwi/s3-bucket-creator.svg)](https://hub.docker.com/r/wikiwi/s3-bucket-creator)
 
 ## Environment Variables
 | Name           | Default                  | Description                                                |
