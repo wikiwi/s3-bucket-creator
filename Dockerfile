@@ -1,5 +1,10 @@
 FROM alpine
 
+LABEL org.label-schema.vcs-url="https://github.com/wikiwi/s3-bucket-creator" \
+      org.label-schema.vendor=wikiwi.io \
+      org.label-schema.name=s3-bucket-creator \
+      io.wikiwi.license=MIT
+
 RUN apk add --update \
     bash \
     ca-certificates \
